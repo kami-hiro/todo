@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
+    <div class="todo">
+        <h1 class="todo__title">TODOアプリ</h1>
+        <div class="inner">
+            
+            <!-- 入力エリア -->
+            <div class="todo-set">
+                <div>
+                    <input class="todo-set__text" type="text" placeholder="追加するタスク" >
+                    <button class="todo-set__submit todo-set__button">追加</button>
+                </div>
+            </div>
+
+            <!-- リスト表示エリア -->
+            <!-- リストはjsで制御する -->
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
+    <script src="/index.js"></script>
 </body>
 </html>
